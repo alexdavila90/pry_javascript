@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="/logoweb.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RentEase</title>
+    <link rel="stylesheet" href="/src/ProfileUpdate/profileupdate.css">
+</head>
+<header>
+    <div class="container">
+      <div class="menu">
+        <div class="logo">
+            <a href="/src/Home/home.html">
+                <img src="/h2.png" alt="logo" height="60px" width="60px">
+            </a>
+        </div>
+        <ul class="nav">
+          <li><a href="../Flat/Flat.html">Nuevo</a></li>
+          <li><a href="../Flat/allFlats.html">Departamentos</a></li>
+          <li><a href="../Register/register.html">Registro</a></li>
+        </ul>
+        <div class="usersesion">
+          <img src="/activeUser.png" alt="logout" height="40px" width="40px">
+          <a href="../ProfileUpdate/profileupdate.html" id="nameUser">
+            <p id="uSesion">Alvaro</p>
+          </a>
+        </div>
+        <div class="logout">
+            <a href="../Login/login.html">
+            <img src="/h1.svg" alt="logout" height="30px" width="30px">
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+<body>
+    <h2 id="title">Actualizar perfil</h2>
+    <div class="container-formulario">
+        
+        <div class="form-content">
+            <form id="registerForm">
+
+                <div class="input-group">
+            
+                    <!-- Username (Deshabilitado) -->
+                    <div class="input-field">
+                        <i class="fa-solid fa-user"></i>
+                        <input type="text" id="userName" placeholder="Nombre de usuario" disabled>
+                    </div>
+            
+                    <!-- First Name (Editable) -->
+                    <div class="input-field">
+                        <i class="fa-solid fa-user"></i>
+                        <input type="text" id="firstName" placeholder="Nombre">
+                    </div>
+            
+                    <!-- Last Name -->
+                    <div class="input-field">
+                        <i class="fa-solid fa-user"></i>
+                        <input type="text" id="lastName" placeholder="Apellido">
+                    </div>
+            
+                    <!-- Email -->
+                    <div class="input-field">
+                        <i class="fa-solid fa-envelope"></i>
+                        <input type="email" id="email" placeholder="Email">
+                    </div>
+            
+                    <!-- Contraseña Actual -->
+                    <div class="input-field">
+                        <i class="fa-solid fa-key"></i>
+                        <input type="password" id="currentPassword" placeholder="Contraseña actual">
+                    </div>
+            
+                    <!-- Nueva Contraseña -->
+                    <div class="input-field">
+                        <i class="fa-solid fa-key"></i>
+                        <input type="password" id="password" placeholder="Nueva Contraseña">
+                    </div>
+            
+                    <!-- Confirmación de Contraseña -->
+                    <div class="input-field">
+                        <i class="fa-solid fa-key"></i>
+                        <input type="password" id="confirmPassword" placeholder="Confirmación de Contraseña">
+                    </div>
+            
+                    <p class="fn">Fecha de nacimiento</p>
+                    <div class="input-field">
+                        <i class="fa-solid fa-calendar"></i>
+                        <input type="date" id="date">
+                    </div>
+            
+                </div>
+            
+                <div class="btn-field">
+                    <button type="submit">Actualizar</button>
+                </div>
+            
+                <p id="errorMessage"></p>
+            
+            </form>
+        </div>
+    </div>
+    <script src="./profileupdate.js" type="module"></script>
+</body>
+</html>
+
