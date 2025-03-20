@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" href="/logoweb.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/src/Flat/allFlats.css">
+  <title>RentEase</title>
+</head>
+<header>
+  <div class="container">
+    <div class="menu">
+      <div class="logo">
+        <a href="/src/Home/home.html">
+            <img src="/h2.png" alt="logo" height="60px" width="60px">
+        </a>
+    </div>
+      <ul class="nav">
+        <li><a href="../Flat/Flat.html">Nuevo</a></li>
+        <li><a href="../Flat/allFlats.html">Departamentos</a></li>
+        <li><a href="../Register/register.html">Registro</a></li>
+      </ul>
+      <div class="usersesion">
+        <img src="/activeUser.png" alt="logout" height="40px" width="40px">
+        <a href="../ProfileUpdate/profileupdate.html" id="nameUser">
+          <p id="uSesion">Alvaro</p>
+        </a>
+      </div>
+      <div class="logout">
+        <a href="../Login/login.html">
+          <img src="/h1.svg" alt="logout" height="30px" width="30px">
+        </a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<body>
+  <dialog id="imageModal" class="modal">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <img class="modal-content" id="modalImage">
+  </dialog>
+  <h2>Departamentos en Renta</h2>
+
+  <div class="filter-container">
+    <div class="filter-item">
+      <label for="filterCity">Ciudad:</label>
+      <input type="text" id="filterCity" placeholder="Ingresa la ciudad">
+    </div>
+    <div class="filter-item">
+      <label for="minPrice">Precio mínimo ($):</label>
+      <input type="number" id="minPrice" placeholder="0">
+    </div>
+    <div class="filter-item">
+      <label for="maxPrice">Precio máximo ($):</label>
+      <input type="number" id="maxPrice" placeholder="10000">
+    </div>
+    <div class="filter-item">
+      <label for="minArea">Área mínima (m²):</label>
+      <input type="number" id="minArea" placeholder="0">
+    </div>
+    <div class="filter-item">
+      <label for="maxArea">Área máxima (m²):</label>
+      <input type="number" id="maxArea" placeholder="500">
+    </div>
+    <div class="filter-buttons">
+      <button onclick="applyFilters()">Aplicar</button>
+      <button onclick="resetFilters()">Borrar</button>
+    </div>
+  </div>
+
+  <table id="flatsTable">
+    <thead>
+      <tr>
+        <th>Foto</th>
+        <th>Ciudad <button onclick="sortFlats('city')">↑↓</button></th>
+        <th>Dirección</th>
+        <th>Nro. Calle</th>
+        <th>Area (m²) <button onclick="sortFlats('areaSize')">↑↓</button></th>
+        <th>Tiene AC</th>
+        <th>Año de Construcción</th>
+        <th>Precio de Renta ($) <button onclick="sortFlats('rentPrice')">↑↓</button></th>
+        <th>Fecha disponibilidad</th>
+        <th>
+          Favorito
+          <button id="favoriteFilterBtn" onclick="toggleFavoriteFilter()"
+            style="background: none; border: none; font-size: 16px; color: white; cursor: pointer;">
+            ❤️
+          </button>
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Área de inserción de los flats -->
+    </tbody>
+  </table>
+
+  <script type="module" src="/src/Flat/allFlats.js"></script>
+</body>
+
+</html>

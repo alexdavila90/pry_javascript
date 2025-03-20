@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" href="/logoweb.png" />
+  <link rel="stylesheet" href="/src/Flat/Flat.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RentEase</title>
+</head>
+<header>
+  <div class="container">
+    <div class="menu">
+      <div class="logo">
+        <a href="/src/Home/home.html">
+            <img src="/h2.png" alt="logo" height="60px" width="60px">
+        </a>
+    </div>
+      <ul class="nav">
+        <li><a href="../Flat/Flat.html">Nuevo</a></li>
+        <li><a href="../Flat/allFlats.html">Departamentos</a></li>
+        <li><a href="../Register/register.html">Registro</a></li>
+      </ul>
+      <div class="usersesion">
+        <img src="/activeUser.png" alt="logout" height="40px" width="40px">
+        <a href="../ProfileUpdate/profileupdate.html" id="nameUser">
+          <p id="uSesion">Alvaro</p>
+        </a>
+      </div>
+      <div class="logout">
+        <a href="../Login/login.html">
+          <img src="/h1.svg" alt="logout" height="30px" width="30px">
+        </a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<body>
+
+  <div id="app"></div>
+  <h2>Nuevo Departamento</h2>
+  <div id="divFlat">
+    <label>
+      Ciudad:
+      <input type="text" id="city">
+    </label>
+    <label id="warningCity"></label>
+    <label>
+      Dirección:
+      <input type="text" id="streetName">
+    </label>
+    <label>
+      Nro. Calle:
+      <input type="number" id="streetNumber">
+    </label>
+    <label id="warningStreetNumber"></label>
+    <label>
+      Área (m²):
+      <input type="number" id="areaSize">
+    </label>
+    <label id="warningAreaSize"></label>
+    <label>
+      Tiene AC:
+      <input type="checkbox" id="hasAC">
+    </label>
+    <label>
+      Año de construcción:
+      <input type="number" id="yearBuilt">
+    </label>
+    <label id="warningYearBuilt"></label>
+    <label>
+      Precio de renta ($):
+      <input type="number" id="rentPrice">
+    </label>
+    <label id="warningRentPrice"></label>
+    <label>
+      Fecha disponibilidad:
+      <input type="date" id="dateAvailable">
+    </label>
+    <label id="warningDateAvailable"></label>
+    <br>
+  <label>Imagen del departamento
+    <img src="/defaultFlat.jpg" id="imageSource" height="100%" width="100%">
+  </label>
+    <div><label id="warningLabel"></label></div>
+    <br>
+    <button onclick="saveFlat()">Guardar</button>
+  </div>
+  <script type="module" src="/src/Flat/saveFlat.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,251 @@
+
+/* =========================== */
+/* 📌 ENCABEZADO (HEADER) */
+/* =========================== */
+
+header {
+    width: 100%;
+    background-image: linear-gradient(to right, rgb(11, 143, 231), rgb(79, 208, 217));
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    width: 100%;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding-left: 20px;
+}
+
+/* NAV ocupa todo el ancho disponible */
+.nav {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    flex-grow: 1;
+    padding: 0;
+}
+
+.nav li {
+    padding: 0 20px;
+}
+
+.nav li a {
+    text-decoration: none;
+    color: aliceblue;
+    padding: 10px 15px;
+    transition: background 0.3s ease-in-out;
+    display: block;
+}
+
+.nav a:hover {
+    background-color: rgb(239, 234, 243);
+    color: black;
+    border-radius: 5px;
+}
+
+/* Sección de usuario y logout */
+.usersesion, .logout {
+    display: flex;
+    align-items: center;
+    padding-right: 20px;
+}
+
+.logout img {
+    filter: invert(1);
+    cursor: pointer;
+}
+
+
+.usersesion p {
+    color: aliceblue;
+    margin: 0;
+    cursor: pointer;
+}
+
+.usersesion {
+    display: flex;
+    align-items: center; /* Alinea verticalmente */
+}
+
+.usersesion a {
+    margin-left: 10px;
+    text-decoration: none;
+    color: inherit;
+}
+
+/* =========================== */
+/* 📌 ESTILOS GENERALES */
+/* =========================== */
+* {
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f8f9fa;
+    text-align: center;
+}
+
+/* =========================== */
+/* 📌 BANNER MEJORADO */
+/* =========================== */
+.banner {
+    background: linear-gradient(to bottom, #f8f9fa, rgba(79, 208, 217, 0.8));
+    color: white;
+    display: block;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.banner-img {
+display: block;
+    justify-content: center;
+}
+
+.banner-img img {
+    width: 100%;
+    height: 100%;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* =========================== */
+/* 📌 DESCRIPCIÓN DE RENT EASE */
+/* =========================== */
+.company-description {
+    padding: 60px 20px;
+    background: white;
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.company-description h2 {
+    color: #0B8FE7;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.company-description p {
+    width: 60%;
+    font-size: 1.2em;
+    color: #333;
+}
+
+/* =========================== */
+/* 📌 INDICADORES DINÁMICOS */
+/* =========================== */
+.indicators {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 20px;
+    background: #f1f1f1;
+}
+
+.indicator {
+    text-align: center;
+}
+
+.indicator h3 {
+    font-size: 2.5em;
+    color: #0B8FE7;
+    margin-bottom: 5px;
+}
+
+/* =========================== */
+/* 📌 DEPARTAMENTOS */
+/* =========================== */
+.departments {
+    padding: 40px 20px;
+    background: white;
+}
+
+.departments h2 {
+    color: #0B8FE7;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.dept-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.dept-card {
+    width: 280px;
+    border-radius: 10px;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 10px;
+}
+
+.dept-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.dept-card h3 {
+    margin: 10px 0;
+    color: #0B8FE7;
+    font-size: 1.2em;
+}
+
+.dept-card p {
+    color: #555;
+    font-size: 0.9em;
+    padding: 0 10px;
+}
+
+/* =========================== */
+/* 📌 SECCIÓN DE CONTACTO */
+/* =========================== */
+.contact-section {
+    padding: 60px 20px;
+    background: #0B8FE7;
+    color: white;
+    text-align: center;
+}
+
+.contact-section h2 {
+    font-size: 2.2em;
+    margin-bottom: 20px;
+}
+
+.contact-section p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.contact-section a {
+    display: inline-block;
+    background: white;
+    color: #0B8FE7;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s ease-in-out;
+}
+
+.contact-section a:hover {
+    background: #fff;
+    color: #076ab2;
+}
