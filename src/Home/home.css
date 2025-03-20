@@ -1,0 +1,342 @@
+/* =========================== */
+/* 📌 ESTILOS GENERALES */
+/* =========================== */
+* {
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Manejo adecuado de dimensiones */
+}
+
+body {
+    background-color: #f8f9fa;
+    text-align: center;
+}
+
+/* =========================== */
+/* 📌 ENCABEZADO (HEADER) */
+/* =========================== */
+
+header {
+    width: 100%;
+    background-image: linear-gradient(to right, rgb(11, 143, 231), rgb(79, 208, 217));
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    width: 100%;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding-left: 20px;
+}
+
+/* NAV ocupa todo el ancho disponible */
+.nav {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    flex-grow: 1;
+    padding: 0;
+}
+
+.nav li {
+    padding: 0 20px;
+}
+
+.nav li a {
+    text-decoration: none;
+    color: aliceblue;
+    padding: 10px 15px;
+    transition: background 0.3s ease-in-out;
+    display: block;
+}
+
+.nav a:hover {
+    background-color: rgb(239, 234, 243);
+    color: black;
+    border-radius: 5px;
+}
+
+/* Sección de usuario y logout */
+.usersesion, .logout {
+    display: flex;
+    align-items: center;
+    padding-right: 20px;
+}
+
+.logout img {
+    filter: invert(1);
+    cursor: pointer;
+}
+
+
+.usersesion p {
+    color: aliceblue;
+    margin: 0;
+    cursor: pointer;
+}
+
+.usersesion {
+    display: flex;
+    align-items: center; /* Alinea verticalmente */
+}
+
+.usersesion a {
+    margin-left: 10px;
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/* carrusel */
+/* Contenedor del carrusel */
+.carousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    position: relative;
+    width: 100%;
+    margin: 30px auto;
+}
+
+/* Botones */
+button {
+    background-color: rgb(11, 143, 231);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+    background-color: #0056b3;
+    transform: scale(1.1); /* Efecto de zoom */
+}
+
+/* Contenido del carrusel */
+#carouselContent {
+    width: 50%;
+    height: 420px;
+    overflow: hidden;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+/* Tarjeta individual */
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+    animation: fadeIn 0.5s ease;
+}
+
+/* Imagen */
+.card img {
+    max-width: 100%;
+    max-height: 180px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+}
+
+/* Títulos y textos */
+.card h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 1rem;
+    color: #555;
+    margin: 5px 0;
+}
+
+/* Animación de entrada */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+
+/* Estilos para los iconos */
+.card-icons {
+    display: flex;
+    justify-content: end;
+    margin-top: 15px;
+    font-size: 1.2rem;
+    color: #555;
+}
+
+.card-icons i {
+    margin-right: 8px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.card-icons i:hover {
+    color: #007bff; /* Cambia de color al pasar el cursor */
+}
+
+.card-icons {
+    font-size: 0.9rem; /* Ajusta el tamaño del texto */
+}
+
+
+/* footer de la pagina  */
+
+/* Estilo general del footer */
+.footer {
+    background-color: rgb(78, 75, 75);
+    color: white;
+    padding: 0px 0;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+}
+
+/* Contenedor principal */
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px 20px;
+}
+
+/* Secciones */
+.footer-info, 
+.footer-links, 
+.footer-contact {
+    flex: 1;
+    min-width: 200px;
+    margin: 10px;
+}
+
+/* Títulos */
+.footer h4 {
+    margin-bottom: 15px;
+    font-size: 1.3rem;
+    border-bottom: 2px solid white;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+/* Enlaces */
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links ul li {
+    margin: 10px 0;
+}
+
+.footer-links ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease-in-out;
+}
+
+.footer-links ul li a:hover {
+    color: #ffdd57; /* Color de hover brillante */
+}
+
+/* Información de contacto */
+.footer-contact p {
+    margin: 8px 0;
+    font-size: 1rem;
+}
+
+.footer-social a {
+    margin: 0 10px;
+    color: white;
+    font-size: 1.5rem;
+    transition: color 0.3s ease-in-out;
+}
+
+.footer-social a:hover {
+    color: #ffdd57; /* Hover de iconos sociales */
+}
+
+/* Parte inferior */
+.footer-bottom {
+    margin-top: 20px;
+    font-size: 0.9rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    color: rgba(255, 255, 255, 0.8);
+}
+
+
+/* diseño para el video */
+.video {
+    width: 100%; 
+    padding: 20px 40px; 
+     
+    text-align: center;
+}
+
+.video h3 {
+    font-size: 2.5rem;
+    color: rgb(29, 133, 219); /* Azul profundo para encabezado */
+    margin-bottom: 10px;
+    font-family: 'Arial', sans-serif;
+}
+
+.video .video-description {
+    font-size: 1.3rem;
+    color: rgb(33, 37, 41); /* Gris oscuro para contraste */
+    margin-bottom: 15px;
+    font-family: 'Arial', sans-serif;
+}
+
+.video .cta {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: rgb(35, 19, 13); /* Terracota suave para destacar */
+    margin-top: 20px;
+    font-family: 'Arial', sans-serif;
+    animation: fadeIn 1s ease-in-out; /* Animación */
+}
+
+/* Animación de entrada */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
