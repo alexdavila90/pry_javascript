@@ -166,3 +166,30 @@ window.sortFlats = sortFlats;
 window.applyFilters = applyFilters;
 window.resetFilters = resetFilters;
 window.toggleFavoriteFilter = toggleFavoriteFilter;
+
+
+//para que funcione el header
+import {borrarSesion, usuarioSesion} from '../Login/funciones';
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    let user = JSON.parse(localStorage.getItem("usuarioSesion"));
+
+    if (!user) {
+        alert("Se requiere iniciar sesión");
+        window.location.href = "/src/Login/login.html";
+        return;
+    }
+
+
+    document.querySelectorAll('.logout').forEach(function (element) {
+        element.addEventListener('click', function (event) {
+            borrarSesion();
+        });
+    });
+
+    const usuarioS = usuarioSesion();
+    console.log("UsuarioS", usuarioS);
+    document.getElementById("uSesion").textContent = usuarioS;
+
+});

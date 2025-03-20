@@ -73,3 +73,46 @@ export class Flat {
 
 }
 
+//para que funcione el header
+import {borrarSesion, usuarioSesion} from '../Login/funciones';
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    let user = JSON.parse(localStorage.getItem("usuarioSesion"));
+
+    if (!user) {
+        alert("Se requiere iniciar sesión");
+        window.location.href = "/src/Login/login.html";
+        return;
+    }
+
+
+    document.querySelectorAll('.logout').forEach(function (element) {
+        element.addEventListener('click', function (event) {
+            borrarSesion();
+        });
+    });
+
+    const usuarioS = usuarioSesion();
+    console.log("UsuarioS", usuarioS);
+    document.getElementById("uSesion").textContent = usuarioS;
+
+});
+
+
+//imagenes del fondo
+const imagenes = [
+    "url('/public/reg1.jpg')",
+    "url('/public/reg2.jpg')",
+    "url('/public/reg3.jpg')"
+];
+
+let indiceActual = 0;
+
+function cambiarFondo() {
+    document.body.style.backgroundImage = imagenes[indiceActual];
+    indiceActual = (indiceActual + 1) % imagenes.length; // Bucle entre imágenes
+}
+
+
+setInterval(cambiarFondo, 4000);

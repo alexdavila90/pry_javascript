@@ -99,6 +99,7 @@ export const saveFlat = () => {
         cleanerInputs();
         document.getElementById('warningLabel').innerHTML = 'El departamento ha sido ingresado exitosamente';
         document.getElementById('warningLabel').style.color = 'green';
+        window.location.href = "/src/Home/home.html";
     }
 
     console.log(flats);
@@ -125,3 +126,4 @@ const cleanerInputs =()=>{
     document.getElementById('dateAvailable').value=null;
 }
 window.saveFlat = saveFlat;
+
