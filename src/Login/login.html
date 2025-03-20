@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="/logoweb.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RentEase</title>
+    <link rel="stylesheet" href="/src/Login/login.css">
+</head>
+<body>
+    <div class="container">
+        <div class="login">
+            <div class="logo">
+                <img src="/h2.png" alt="logo" height="200vh" width="200vh">
+            </div>
+            <p class="ing">Ingresa a tu cuenta</p>
+            <form action="" method="get" name="formulario" class="formulario" id="loginForm">
+              
+                <hr>
+                <div><input type="text" placeholder="Usuario" name="user" class="input-field"></div>
+                <div><input type="password" placeholder="Contraseña" name="password" class="input-field"> </div>
+                <div><input type="submit" value="Iniciar sesión"></div>
+                <p id="error">Usuario o contraseña incorrecta</p>
+                <hr>
+                <div class="regis">
+                    <p>No tienes una cuenta?&nbsp;</p>
+                    <p class="registro"><a href="/src/Register/register.html">Regístrate</a>
+                </div>        
+                
+            </form>
+        </div>
+        <div class="imagenes">
+            <img src="/login1.jpg" alt="logo" class="active">
+            <img src="/login2.jpg" alt="logo">
+            <img src="/login3.jpg" alt="logo">
+        </div>
+
+    </div>
+    <script type="module" src="/src/Login/login.js"></script>
+</body>
+</html>
