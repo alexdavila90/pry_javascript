@@ -1,93 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <link rel="icon" href="/logoweb.png" />
+  <meta charset="UTF-8">
+  <link rel="icon" href="/logoweb.png" />
   <link rel="stylesheet" href="/src/Home/home.css">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RentEase</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RentEase</title>
 </head>
 <header>
-    <div class="container">
-      <div class="menu">
-        <div class="logo">
-            <a href="/src/Home/home.html">
-                <img src="/h2.png" alt="logo" height="60px" width="60px">
-            </a>
-        </div>
-        <ul class="nav">
-          <li><a href="../Flat/Flat.html">Nuevo</a></li>
-          <li><a href="../Flat/allFlats.html">Departamentos</a></li>
-          <li><a href="../Register/register.html">Registro</a></li>
-        </ul>
-        <div class="usersesion">
-          <img src="/activeUser.png" alt="logout" height="40px" width="40px">
-          <a href="../ProfileUpdate/profileupdate.html" id="nameUser">
-            <p id="uSesion">Alvaro</p>
-          </a>
-        </div>
-        <div class="logout">
-          <a href="../Login/login.html">
-            <img src="/h1.svg" alt="logout" height="30px" width="30px">
-          </a>
-        </div>
+  <div class="container">
+    <div class="menu">
+      <div class="logo">
+        <a href="/src/Home/home.html">
+          <img src="/h2.png" alt="logo" height="60px" width="60px">
+        </a>
+      </div>
+      <ul class="nav">
+        <li><a href="../Flat/Flat.html">Nuevo</a></li>
+        <li><a href="../Flat/allFlats.html">Departamentos</a></li>
+        <li><a href="../Register/register.html">Registro</a></li>
+      </ul>
+      <div class="usersesion">
+        <img src="/activeUser.png" alt="logout" height="40px" width="40px">
+        <a href="../ProfileUpdate/profileupdate.html" id="nameUser">
+          <p id="uSesion">Alvaro</p>
+        </a>
+      </div>
+      <div class="logout">
+        <a href="../Login/login.html">
+          <img src="/h1.svg" alt="logout" height="30px" width="30px">
+        </a>
       </div>
     </div>
-  </header>
-  <script src="./home.js" type="module"></script>
-<body>
-  <div class="carousel">
-    <button id="prevBtn">⬅️</button>
-    <div id="carouselContent"></div>
-    <button id="nextBtn">➡️</button>
   </div>
+</header>
+<script src="./home.js" type="module"></script>
+
+<body>
+
+
+  <section class="banner">
+    <div class="banner-img">
+      <img src="/banner-01.jpg" alt="Rent Ease">
+    </div>
+  </section>
+
+  <section class="company-description">
+    <h2>RentEase</h2>
+    <p>En RentEase, hacemos que la renta de departamentos sea fácil, rápida y segura.
+      Conectamos propietarios con inquilinos de manera eficiente, asegurando que encuentres
+      tu espacio ideal sin complicaciones.</p>
+  </section>
+
+  <section class="indicators">
+    <div class="indicator">
+      <h3 class="counter" data-target="500">0</h3>
+      <p>Departamentos Disponibles</p>
+    </div>
+    <div class="indicator">
+      <h3 class="counter" data-target="1200">0</h3>
+      <p>Clientes Satisfechos</p>
+    </div>
+    <div class="indicator">
+      <h3 class="counter" data-target="95">0</h3>
+      <p>Tasa de Satisfacción</p>
+    </div>
+  </section>
+
+  <section class="departments">
+    <h2>Nuestros Departamentos</h2>
+    <div class="carousel">
+      <button id="prevBtn">⬅️</button>
+      <div id="carouselContent"></div>
+      <button id="nextBtn">➡️</button>
+    </div>
+  </section>
+
   <div class="video">
-    <h3>Te ayudamos a encontrar el hogar de tus sueños</h3>
+    <h2>Te ayudamos a encontrar el hogar de tus sueños</h2>
     <p class="video-description">
-        Descubre oportunidades únicas con nuestro equipo. Mira cómo podemos acompañarte en cada paso para encontrar tu hogar ideal.
+      Descubre oportunidades únicas con nuestro equipo. Mira cómo podemos acompañarte en cada paso para encontrar tu
+      hogar ideal.
     </p>
-    <iframe width="600px" height="415px" src="https://www.youtube.com/embed/VhcbOY4V2no?si=zjt3xkzLo39LPpZM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <iframe width="600px" height="415px" src="https://www.youtube.com/embed/VhcbOY4V2no?si=zjt3xkzLo39LPpZM"
+      title="YouTube video player" frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     <p class="cta">¡Explora más con nosotros!</p>
-</div>
+  </div>
 
 </body>
 <footer class="footer">
   <div class="footer-container">
-      <!-- Sección de información -->
-      <div class="footer-info">
-          <h4>Sobre Nosotros</h4>
-          <p>Ofrecemos las mejores propiedades y servicios para ayudarte a encontrar el hogar de tus sueños.</p>
-      </div>
+    <!-- Sección de información -->
+    <div class="footer-info">
+      <h4>Sobre Nosotros</h4>
+      <p>Ofrecemos las mejores propiedades y servicios para ayudarte a encontrar el hogar de tus sueños.</p>
+    </div>
 
-      <!-- Sección de enlaces -->
-      <div class="footer-links">
-          <h4>Enlaces Rápidos</h4>
-          <ul>
-              <li><a href="/src/Home/home.html">Inicio</a></li>
-              <li><a href="#about">Sobre Nosotros</a></li>
-            
-              <li><a href="#faq">Preguntas Frecuentes</a></li>
-          </ul>
-      </div>
+    <!-- Sección de enlaces -->
+    <div class="footer-links">
+      <h4>Enlaces Rápidos</h4>
+      <ul>
+        <li><a href="/src/Home/home.html">Inicio</a></li>
+        <li><a href="#about">Sobre Nosotros</a></li>
 
-      <!-- Sección de contacto -->
-      <div class="footer-contact">
-          <h4>Contáctanos</h4>
-          <p><i class="fa-solid fa-phone"></i> +593-980537563</p>
-          <p><i class="fa-solid fa-envelope"></i> info@rentease.com</p>
-          <p>Matriz: Av. 6 de diciembre y Shirys</p>
-          <div class="footer-social">
-              <a href="https://es-la.facebook.com/login/device-based/regular/login/"><i class="fa-brands fa-facebook"></i></a>
-              <a href="https://x.com/?lang=es"><i class="fa-brands fa-x"></i></a>
-              <a href="https://www.youtube.com/watch?v=VhcbOY4V2no"><i class="fa-brands fa-youtube"></i></a>
-          </div>
+        <li><a href="#faq">Preguntas Frecuentes</a></li>
+      </ul>
+    </div>
+
+    <!-- Sección de contacto -->
+    <div class="footer-contact">
+      <h4>Contáctanos</h4>
+      <p><i class="fa-solid fa-phone"></i> +593-980537563</p>
+      <p><i class="fa-solid fa-envelope"></i> info@rentease.com</p>
+      <p>Matriz: Av. 6 de diciembre y Shirys</p>
+      <div class="footer-social">
+        <a href="https://es-la.facebook.com/login/device-based/regular/login/"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://x.com/?lang=es"><i class="fa-brands fa-x"></i></a>
+        <a href="https://www.youtube.com/watch?v=VhcbOY4V2no"><i class="fa-brands fa-youtube"></i></a>
       </div>
+    </div>
   </div>
   <div class="footer-bottom">
-      <p>© 2025 RensEase. Todos los derechos reservados.</p>
+    <p>© 2025 RensEase. Todos los derechos reservados.</p>
   </div>
 </footer>
 

@@ -22,7 +22,7 @@ header {
     width: 100%;
     background-image: linear-gradient(to right, rgb(11, 143, 231), rgb(79, 208, 217));
     position: relative;
-    margin-bottom: 30px;
+    margin-bottom: 0px;
 }
 
 .menu {
@@ -97,9 +97,82 @@ header {
     color: inherit;
 }
 
+/* =========================== */
+/* 📌 BANNER MEJORADO */
+/* =========================== */
+.banner {
+    background: white;
+    color: white;
+    display: block;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.banner-img {
+display: block;
+    justify-content: center;
+}
+
+.banner-img img {
+    width: 100%;
+    height: 100%;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* =========================== */
+/* 📌 DESCRIPCIÓN DE RENT EASE */
+/* =========================== */
+.company-description {
+    padding: 80px 40px;
+    background: white;
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h2 {
+    color: #0B8FE7;
+    font-size: 2em;
+    margin-bottom: 20px;
+    display: block;
+}
+
+.company-description p {
+    width: 60%;
+    font-size: 1.2em;
+    color: #333;
+}
+
+/* =========================== */
+/* 📌 INDICADORES DINÁMICOS */
+/* =========================== */
+.indicators {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 30px;
+    background: #f1f1f1;
+}
+
+.indicator {
+    text-align: center;
+}
+
+.indicator h3 {
+    font-size: 2.5em;
+    color: #0B8FE7;
+    margin-bottom: 5px;
+}
 
 /* carrusel */
 /* Contenedor del carrusel */
+
+.departments{
+display: block;
+padding: 50px 50px;
+}
+
 .carousel {
     display: flex;
     align-items: center;
@@ -108,6 +181,7 @@ header {
     position: relative;
     width: 100%;
     margin: 30px auto;
+    padding-top: 10PX;
 }
 
 /* Botones */
@@ -301,8 +375,8 @@ button:hover {
 /* diseño para el video */
 .video {
     width: 100%; 
-    padding: 20px 40px; 
-     
+    padding: 60px 40px; 
+    background: #f1f1f1;
     text-align: center;
 }
 
