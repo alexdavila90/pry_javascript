@@ -64,7 +64,7 @@ document.getElementById("registerForm").addEventListener("submit", function (eve
         date);
     alert("Usuario creado con exito");
 
-    window.location.href = "/src/Home/home.html";
+    window.location.href = "/src/Login/login.html";
 
 });
 
