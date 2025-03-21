@@ -291,7 +291,8 @@ button:hover {
 .footer {
     background-color: rgb(78, 75, 75);
     color: white;
-    padding: 0px 0;
+    margin-top: 20px;
+    padding: 20px 0;
     font-family: 'Arial', sans-serif;
     text-align: center;
 }

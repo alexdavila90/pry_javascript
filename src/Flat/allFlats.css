@@ -352,3 +352,90 @@ th button {
         font-size: 12px;
     }
 }
+
+/* footer de la pagina  */
+
+/* Estilo general del footer */
+.footer {
+    background-color: rgb(78, 75, 75);
+    color: white;
+    margin-top: 20px;
+    padding: 20px 0;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+}
+
+/* Contenedor principal */
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px 20px;
+}
+
+/* Secciones */
+.footer-info, 
+.footer-links, 
+.footer-contact {
+    flex: 1;
+    min-width: 200px;
+    margin: 10px;
+}
+
+/* Títulos */
+.footer h4 {
+    margin-bottom: 15px;
+    font-size: 1.3rem;
+    border-bottom: 2px solid white;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+/* Enlaces */
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links ul li {
+    margin: 10px 0;
+}
+
+.footer-links ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease-in-out;
+}
+
+.footer-links ul li a:hover {
+    color: #ffdd57; /* Color de hover brillante */
+}
+
+/* Información de contacto */
+.footer-contact p {
+    margin: 8px 0;
+    font-size: 1rem;
+}
+
+.footer-social a {
+    margin: 0 10px;
+    color: white;
+    font-size: 1.5rem;
+    transition: color 0.3s ease-in-out;
+}
+
+.footer-social a:hover {
+    color: #ffdd57; /* Hover de iconos sociales */
+}
+
+/* Parte inferior */
+.footer-bottom {
+    margin-top: 20px;
+    font-size: 0.9rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    color: rgba(255, 255, 255, 0.8);
+}
